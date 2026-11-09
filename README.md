@@ -10,6 +10,10 @@ npx skills add mplacona/linkintel-skills
 
 The skill shows your agent how to connect the LinkIntel MCP server (`https://www.getlinkintel.com/api/mcp`, OAuth in the browser), check that your data is ready, and turn a cited evidence brief into a draft in your voice.
 
+## Cursor
+
+This repo is also a Cursor plugin: `mcp.json` registers the remote MCP server and `.cursor-plugin/plugin.json` describes the plugin. Add it from [cursor.directory](https://cursor.directory/plugins/new).
+
 ## What's inside
 
 - [`skills/linkintel-content-evidence/SKILL.md`](skills/linkintel-content-evidence/SKILL.md): setup, the tools to call and in what order, and the limits the evidence can and can't support.
