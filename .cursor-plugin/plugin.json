@@ -1,0 +1,11 @@
+{
+  "name": "linkintel",
+  "version": "1.0.0",
+  "description": "Connect LinkIntel to Cursor or any MCP assistant: your own X post results and X's open-source ranking weights, so drafts start from evidence.",
+  "author": { "name": "Marcos Placona", "email": "support@getlinkintel.com" },
+  "homepage": "https://www.getlinkintel.com",
+  "repository": "https://github.com/mplacona/linkintel-skills",
+  "license": "MIT",
+  "keywords": ["mcp", "x", "twitter", "analytics", "content", "ai-writing", "social-media"],
+  "logo": "assets/logo.png"
+}
