@@ -2,7 +2,7 @@
 name: linkintel-content-evidence
 description: Connect LinkIntel to an MCP-capable AI assistant for grounded drafting from the customer's own stored X post snapshots, X's published ranking weights and optional public X references. Never claim a live X fetch or publication.
 metadata:
-  version: 1.12.0
+  version: 1.13.0
   product: LinkIntel
   homepage: https://www.getlinkintel.com
 ---
@@ -28,7 +28,8 @@ its limits; the assistant does the analysis and writes in the user's voice.
    reach as a prediction for the user's post.
 
 If LinkIntel tools are not available, follow **Start here** to add the server. The browser handles
-Google sign-in, checkout when needed, and consent; no token is ever typed into this conversation.
+Google sign-in and consent (and checkout only when a free trial has already been used); no token is
+ever typed into this conversation.
 Once connected, the assistant becomes the default workspace.
 
 LinkIntel starts with X. Once the customer connects X (from `/account#connect-x`, or the link
@@ -131,10 +132,12 @@ Existing LinkedIn customers can still import their historical post corpus from T
 webhook, or a LinkedIn creator-analytics `.xlsx` export. This optional legacy source is not
 offered to new customers and is not needed for X.
 
-The stated subscription offer is $39 USD/month after a 7-day free trial. A card is required to start
-the trial and nothing is charged during it; cancel before it ends and you pay nothing, otherwise
-$39 is billed when it ends and monthly after that. Google creates or signs in to an identity without
-charging; starting the trial (card required) is needed before setup and MCP access open.
+The stated subscription offer is $39 USD/month after a 3-day free trial that needs no card. The
+trial starts counting when the assistant first calls a LinkIntel tool, and nothing is charged when
+it ends: access stops unless the customer subscribes, which is billed at checkout and monthly after
+that. Google creates or signs in to an identity without charging, and a new account can open setup
+and connect an assistant straight away. If a tool answers that the trial or subscription has ended,
+relay that message and its link once, and do not retry or guess at results.
 
 ## Secret boundary
 
@@ -324,8 +327,8 @@ that LinkIntel can do so.
 - Scope: the authenticated customer's own X post snapshots once they connect X, X's published ranking weights, and optional public X references they choose; optional LinkedIn analytics for existing customers only
 - Reference import: covered by the subscription; available from the assistant via `find_account_posts` (discovery by handle) and `add_references` (by URL), or from the browser account page
 - Integration details: https://www.getlinkintel.com/integrations
-- Checkout: the current offer, trial and billing terms are shown before the trial starts
+- Checkout: only when the customer subscribes; the current offer and billing terms are shown before payment
 - Documentation: https://www.getlinkintel.com/docs/mcp
 - Support: support@getlinkintel.com
 
-END SKILL v1.12.0
+END SKILL v1.13.0
